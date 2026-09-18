@@ -32,6 +32,32 @@
       </p>
     </header>
 
+    <!-- 入力セクション（メイン） -->
+    <section class="input-card">
+      <form id="diagnosisForm" class="diagnosis-form">
+        <div class="form-group">
+          <label for="birthDate">あなたの生年月日を選択してください</label>
+          <div class="date-input-wrapper">
+            <input 
+              type="date" 
+              id="birthDate" 
+              name="birthDate" 
+              required
+              min="1900-01-01" 
+              max="2099-12-31"
+              aria-label="生年月日"
+            >
+          </div>
+          <p class="privacy-note">🔒 入力された生年月日が外部に送信・保存されることは一切ありません。</p>
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn-primary">
+          <span class="btn-text">相棒を見つける！</span>
+          <span class="btn-icon">✨</span>
+        </button>
+      </form>
+    </section>
+
     <!-- 計算方式の解説 -->
     <section class="how-it-works-card">
       <div class="how-it-works-header">
@@ -57,31 +83,6 @@
           <div class="step-text">余りの番号のポケモンが出現！<br><span class="step-example">No.0402 コロトック（※余り0は1025）</span></div>
         </div>
       </div>
-    </section>
-
-    <!-- 入力セクション -->
-    <section class="input-card">
-      <form id="diagnosisForm" class="diagnosis-form">
-        <div class="form-group">
-          <label for="birthDate">あなたの生年月日を選択してください</label>
-          <div class="date-input-wrapper">
-            <input 
-              type="date" 
-              id="birthDate" 
-              name="birthDate" 
-              required
-              min="1900-01-01" 
-              max="2099-12-31"
-              aria-label="生年月日"
-            >
-          </div>
-        </div>
-
-        <button type="submit" id="submitBtn" class="btn-primary">
-          <span class="btn-text">相棒を見つける！</span>
-          <span class="btn-icon">✨</span>
-        </button>
-      </form>
     </section>
 
     <!-- ローディング表示 -->
